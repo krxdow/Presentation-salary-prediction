@@ -14,7 +14,7 @@ Once reveal.js is installed, we recommend checking out the Markup and Config Opt
 
 We make a point of distributing reveal.js in a way that it can be used by as many people as possible. The basic setup is our most broadly accessible way to get started and only requires that you have a web browser. There's no need to go through a build process or install any dependencies.
 
-1. Download the latest reveal.js version from [https://github.com/hakimel/reveal.js/archive/master.zip](https://github.com/hakimel/reveal.js/archive/master.zip)
+1. Download the latest reveal.js version from [My depo](https://github.com/krxdow/Presentation-salary-prediction/archive/refs/heads/master.zip)
 2. Unzip and replace the example contents in index.html with your own
 3. Open index.html in a browser to view it
 
