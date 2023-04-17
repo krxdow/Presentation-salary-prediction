@@ -41,8 +41,5 @@ Some reveal.js features, like external Markdown, require that presentations run 
 - 🎬 [Watch the reveal.js video course (paid)](https://revealjs.com/course)
 
 --- 
-<div align="center">
-  MIT licensed | Copyright © 2011-2023 Hakim El Hattab, https://hakim.se
-</div>
 
 
