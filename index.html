@@ -1,70 +1,83 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link href="dist/reset.css" rel="stylesheet">
+    <link href="dist/reveal.css" rel="stylesheet">
+    <link href="dist/theme/black.css" rel="stylesheet">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Prédiction des salaires</h1>
-				</section>
+    <!-- Theme used for syntax highlighted code -->
+    <link href="plugin/highlight/monokai.css" rel="stylesheet">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h1>Prédiction des salaires</h1>
+        </section>
 
-				<!-- Slide 2: Notre Organisation -->
-				<section>
-					<h2>Notre Organisation</h2>
-					<ul>
-						<li>Méthode Cycle en V</li>
-						<li>Outils : Discord, Notion, Trello</li>
-					</ul>
-				</section>
+        <!-- Slide 2: Notre Organisation -->
+        <section>
+            <h2>Notre Organisation</h2>
+            <ul>
+                <li>Méthode Cycle en V</li>
+                <li>Outils : Discord, Notion, <a href="https://trello.com/b/PGo8QMrp/mini-projet-ml"> Trello</a> <a
+                        href="https://colab.research.google.com/drive/18ckPDa18-KMRmzBEmFYoDhrlof3S0CbS">Google
+                    Colab</a></li>
+            </ul>
+        </section>
 
-				<!-- Slide 3: Prédiction des salaires -->
-				<section>
-					<h2>Prédiction des salaires</h2>
-					<ul>
-						<li>Analyse et prétraitement des données</li>
-						<li>Régression linéaire</li>
-						<li>Arbre de décision</li>
-					</ul>
-				</section>
+        <!-- Slide 3: Prédiction des salaires -->
+        <section>
+            <h2>Liste des Etapes</h2>
+            <ul>
+                <li>Analyse et prétraitement des données</li>
+                <li>Régression linéaire</li>
+                <li>Arbre de décision</li>
+            </ul>
+        </section>
 
-				<!-- Slide 4: Comparaison des modèles -->
-				<section>
-					<h2>Comparaison des modèles</h2>
-				</section>
+        <section>
+            <h3>
+                Analyse et prétraitement des données
+            </h3>
+            <ul>
+                <li>
+                    <a href="https://insights.stackoverflow.com/survey">Stack Overflow Annual Developer Survey</a>
+                </li>
+            </ul>
+        </section>
 
-				<!-- Slide 5: Présentation des résultats -->
-				<section>
-					<h2>Présentation des résultats</h2>
-				</section>
-			</div>
-		</div>
+        <!-- Slide 4: Comparaison des modèles -->
+        <section>
+            <h2>Comparaison des modèles</h2>
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <!-- Slide 5: Présentation des résultats -->
+        <section>
+            <h2>Présentation des résultats</h2>
+        </section>
+    </div>
+</div>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+</script>
+</body>
 </html>
