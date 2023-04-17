@@ -25,7 +25,7 @@ That's it 🚀
 Some reveal.js features, like external Markdown, require that presentations run from a local web server. The following instructions will set up such a server as well as all of the development tasks needed to make edits to the reveal.js source code.
 
 1. Install Node.js (10.0.0 or later)
-2. Clone the reveal.js repository: `$ git clone https://github.com/hakimel/reveal.js.git`
+2. Clone the reveal.js repository: `$ git clone krxdow/Presentation-salary-prediction`
 3. Move to the reveal.js folder and install dependencies: `$ cd reveal.js && npm install`
 4. Serve the presentation and monitor source files for changes: `$ npm start`
 5. Open [http://localhost:8000](http://localhost:8000) to view your presentation
