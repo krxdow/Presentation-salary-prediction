@@ -1,43 +1,39 @@
-<p align="center">
-  <a href="https://revealjs.com">
-  <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
-  </a>
-  <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
-</p>
+# Installation
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create beautiful presentations for free. Check out the live demo at [revealjs.com](https://revealjs.com/).
+We provide three different ways to install reveal.js depending on your use case and technical experience.
 
-The framework comes with a powerful feature set including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/auto-animate/), [PDF export](https://revealjs.com/pdf-export/), [speaker notes](https://revealjs.com/speaker-view/), [LaTeX typesetting](https://revealjs.com/math/), [syntax highlighted code](https://revealjs.com/code/) and an [extensive API](https://revealjs.com/api/).
+- The basic setup is the easiest way to get started. No need to set up any build tools.
+- The full setup gives you access to the build tools needed to make changes to the reveal.js source code. It includes a web server which is required if you want to load external Markdown files (the basic setup paired with your own choice of local web server works too).
+- If you want to use reveal.js as a dependency in your project, you can install from npm.
 
----
+# Next Steps
 
-Want to create reveal.js presentation in a graphical editor? Try <https://slides.com>. It's made by the same people behind reveal.js.
+Once reveal.js is installed, we recommend checking out the Markup and Config Option guides.
 
----
+## Basic Setup
 
-### Sponsors
-Hakim's open source work is supported by <a href="https://github.com/sponsors/hakimel">GitHub sponsors</a>. Special thanks to:
-<div align="center">
-  <table>
-    <td align="center">
-      <a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=revealjs&utm_source=github">
-        <div>
-          <img src="https://user-images.githubusercontent.com/629429/151508669-efb4c3b3-8fe3-45eb-8e47-e9510b5f0af1.svg" width="290" alt="WorkOS">
-        </div>
-        <b>Your app, enterprise-ready.</b>
-        <div>
-          <sub>Start selling to enterprise customers with just a few lines of code. Add Single Sign-On (and more) in minutes instead of months.</sup>
-        </div>
-      </a>
-    </td>
-  </table>
-</div>
+We make a point of distributing reveal.js in a way that it can be used by as many people as possible. The basic setup is our most broadly accessible way to get started and only requires that you have a web browser. There's no need to go through a build process or install any dependencies.
+
+1. Download the latest reveal.js version from [https://github.com/hakimel/reveal.js/archive/master.zip](https://github.com/hakimel/reveal.js/archive/master.zip)
+2. Unzip and replace the example contents in index.html with your own
+3. Open index.html in a browser to view it
+
+That's it 🚀
+
+## Full Setup - Recommended
+
+Some reveal.js features, like external Markdown, require that presentations run from a local web server. The following instructions will set up such a server as well as all of the development tasks needed to make edits to the reveal.js source code.
+
+1. Install Node.js (10.0.0 or later)
+2. Clone the reveal.js repository: `$ git clone https://github.com/hakimel/reveal.js.git`
+3. Move to the reveal.js folder and install dependencies: `$ cd reveal.js && npm install`
+4. Serve the presentation and monitor source files for changes: `$ npm start`
+5. Open [http://localhost:8000](http://localhost:8000) to view your presentation
+
 
 ---
 
-### Getting started
+### Additional Information and Resources
 - 🚀 [Install reveal.js](https://revealjs.com/installation)
 - 👀 [View the demo presentation](https://revealjs.com/demo)
 - 📖 [Read the documentation](https://revealjs.com/markup/)
@@ -48,3 +44,5 @@ Hakim's open source work is supported by <a href="https://github.com/sponsors/ha
 <div align="center">
   MIT licensed | Copyright © 2011-2023 Hakim El Hattab, https://hakim.se
 </div>
+
+
