@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 
-    <title>reveal.js</title>
-
+    <title>Présentation</title>
     <link href="dist/reset.css" rel="stylesheet">
     <link href="dist/reveal.css" rel="stylesheet">
     <link href="dist/theme/league.css" rel="stylesheet">
@@ -17,15 +16,15 @@
 <div class="reveal">
     <div class="slides">
         <section>
-            <h1>Prédiction des salaires</h1>
-            <image height="30%" src="images/imageGarde.png" width="30%"></image>
+            <h2>Prédiction des salaires</h2>
+            <image height="50%" src="images/imageGarde.png" width="50%"></image>
 
         </section>
 
 
         <section>
             <h2>Organisation</h2>
-                    <span class="fragment fade-in">
+            <span class="fragment fade-in">
                         <p> Cycle en V</p>
                         <image height="40%" src="images/cycleV.png" width="40%"></image>
                     </span>
@@ -35,13 +34,13 @@
         <section>
             <h2>Organisation</h2>
 
-                        <p> Cycle en V</p>
+            <p> Cycle en V</p>
             <span class="fragment" data-fragment-index="1">
                 Avantage: simple
             </span>
             <br>
             <span class="fragment" data-fragment-index="2">
-                Inconveniant: Effet tunel
+                Inconvenient: Effet tunnel
             </span>
 
         </section>
@@ -50,20 +49,20 @@
         <section>
             <h2>Organisation</h2>
             <span class="fragment fade-in">
-                        <p> Outilles</p>
+                        <p> Outils</p>
                 <p>Google Colab, Trello, Notion, Discord </p>
-                        <image height="40%" src="images/trello.jpeg" width="40%"></image>
+                        <image height="40%" src="images/trello.png" width="40%"></image>
                     </span>
 
         </section>
 
 
-        <!-- Slide 3: Prédiction des salaires -->
-        <section>
+        <!-- Slide 3 : Prédiction des salaires -->
+        <section data-background="#8284a8">
             <h2>Les Etapes</h2>
             <ul>
                 <center>
-                    <image height="70%" src="images/Diagramme_CDP.svg" width="70%"></image>
+                    <image height="75%" src="images/Diagramme_CDP.svg" width="75%"></image>
                 </center>
             </ul>
         </section>
@@ -77,13 +76,17 @@
                 <center>
                     <a class="fragment" data-fragment-index="1" href="https://insights.stackoverflow.com/survey">Stack
                         Overflow Annual Developer Survey</a>
-                    <p class="fragment" data-fragment-index="2">Data Set (CSV) 70 000 ligne</p>
-                    <a class="fragment" data-fragment-index="4" style="color: #0d99a5"> feature </a>
-                    <a class="fragment" data-fragment-index="4" style="color: #dc322f"> target </a>
+                    <p class="fragment" data-fragment-index="2">Data Set (CSV) 70 000 Ligne 72 Colonnes</p>
+
+                    <a class="fragment" data-fragment-index="4" style="color: #dc322f">Target </a>
                     <br>
-                    <a class="fragment" data-fragment-index="5" style="color: #0d99a5"> Country, EdLevel, YearsCodePro,
-                        Age,Employment </a>
-                    <a class="fragment" data-fragment-index="5" style="color: #dc322f"> ConvertedCompYearly </a>
+                    <a class="fragment" data-fragment-index="4" style="color: #dc322f"> ConvertedCompYearly(Salaire)</a>
+                    <br>
+                    <a class="fragment" data-fragment-index="5" style="color: #0d99a5"> feature </a>
+                    <br>
+                    <a class="fragment" data-fragment-index="5" style="color: #0d99a5"> Country, EdLevel,
+                        YearsCodePro,Age,Employment </a>
+
                 </center>
 
 
@@ -92,16 +95,34 @@
 
 
         <section>
-            <h3>
-                Analyse et prétraitement des données
-            </h3>
-            <ul>
-                <li>
-                    Nétoyage des données et prétraitement
-                </li>
-            </ul>
-        </section>
+            <h3>Prétraitement ET NeTTOYAGE </h3>
 
+
+            <div style="text-align: center">
+
+                <div class="fragment">
+                    <p style="font-size: 60%">Sélection des Colones</p>
+                    <pre>
+                    <code style="font-size: 80%;width:min-content">df_clean = df[["Country", "EdLevel", "YearsCodePro", "Age","Employment", "ConvertedCompYearly"]])</code>
+                </pre>
+                </div>
+
+                <div class="fragment">
+                    <p style="font-size: 60%">Renommage</p>
+                    <pre>
+                    <code style="font-size: 100%;width:min-content">df_clean = df_clean.rename({"ConvertedCompYearly" : "Salary"}, axis=1)</code>
+                </pre>
+                </div>
+
+                <div class="fragment">
+
+                    <p style="font-size: 60%">Suppression des valeurs null </p>
+                    <pre>
+                    <code style="font-size: 100%;width:min-content">df_clean = df_clean.rename({"ConvertedCompYearly" : "Salary"}, axis=1)</code>
+                </pre>
+                </div>
+            </div>
+        </section>
 
         <section>
             <h2>Régression Lineaire</h2>
@@ -117,18 +138,36 @@
         <!-- Slide 4: Comparaison des modèles -->
         <section>
             <h2>Comparaison des modèles</h2>
-
             <image height="70%" src="images/allemagne_master_f_aexp.png" width="70%"></image>
-            <image height="70%" src="images/niveauEtude.png" width="70%"></image>
-
         </section>
 
+        <section>
+            <h2>Comparaison des modèles</h2>
+            <image height="60%" src="images/niveauEtude.png" width="60%"></image>
+        </section>
+
+        <section>
+            <h2>Comparaison des modèles</h2>
+            <p CLASS="fragment">Mean squared error value: </p>
+
+            <P CLASS="fragment">
+                Decision tree model : 37000
+                <br>
+                Linear regression : 45000
+                <br>
+            </P>
+            <p class="fragment">
+                Decision tree model 18% plus précis que Linear regression
+            </p>
+
+        </section>
         <!-- Slide 5: Présentation des résultats -->
         <section>
             <h2>Présentation des résultats</h2>
-
             <p>Interface Web</p>
-            <p>Flask Tailwind CSS</p>
+            <p class="fragment">Flask</p>
+            <p class="fragment">Tailwind CSS</p>
+            <p class="fragment">Démo</p>
 
         </section>
     </div>
